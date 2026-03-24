@@ -4,9 +4,9 @@ import streamlit as st
 st.set_page_config(page_title="Brand Sentiment NLP | David", layout="wide", page_icon="📊")
 
 # --- SIDEBAR: LIVE INFERENCE SIMULATOR ---
-st.sidebar.title("👨‍💻 Inference Engine")
+st.sidebar.title("Inference Engine")
 st.sidebar.markdown("---")
-st.sidebar.header("💬 Live Text Analyzer")
+st.sidebar.header("Live Text Analyzer")
 st.sidebar.write("Test the NLP model's understanding of context and emojis:")
 
 # Text input for the recruiter to play with
@@ -24,7 +24,7 @@ if st.sidebar.button("Analyze Sentiment"):
             st.sidebar.info("Sentiment: NEUTRAL (Confidence: 0.82)")
             
 # --- MAIN DASHBOARD AREA ---
-st.title("📊 Multimodal Sentiment Analysis")
+st.title("Multimodal Sentiment Analysis")
 st.markdown("Analyzing unstructured social media text (including emojis and slang) using a deep learning **Transformer (RoBERTa)**.")
 
 col1, col2 = st.columns(2)
@@ -38,7 +38,7 @@ with col2:
     st.write("Instead of training from scratch, we programmatically ingested the **TweetEval** benchmark dataset and passed it through a pre-trained **Hugging Face RoBERTa** pipeline, extracting actionable brand health metrics.")
 
 st.markdown("---")
-st.subheader("📈 Executive Brand Dashboard")
+st.subheader("Executive Brand Dashboard")
 
 # --- DISPLAY SAVED ARTIFACTS ---
 tab1, tab2 = st.tabs(["Brand Health Distribution", "Model Accuracy (Confusion Matrix)"])
